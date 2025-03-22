@@ -1,5 +1,11 @@
 import { getParkVisitorCenterDetails } from './parkService.mjs';
 import { listTemplate, vcImageTemplate, vcAmenityTemplate, detailsTemplate } from './templates.mjs';
+import { park } from './parkService.mjs';
+
+document.querySelector('.vc-name').textContent = `${park.fullName} Visitor Center`;
+document.querySelector('.vc-description').textContent = park.description;
+document.querySelector('.vc-image').src = park.images[0].url;
+document.querySelector('.vc-image').alt = park.images[0].altText;
 
 function getParam(param) {
   const searchParams = new URLSearchParams(window.location.search);
