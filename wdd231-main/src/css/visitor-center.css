@@ -1,0 +1,32 @@
+.vc-info {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .vc-image {
+    width: 300px;
+    object-fit: cover;
+  }
+  
+  .vc-details details {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .vc-gallery ul {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .vc-gallery img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
